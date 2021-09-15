@@ -1,0 +1,494 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>interface_details module &mdash; Get emote Interface Details 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to Get emote Interface Details’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Get emote Interface Details
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">interface_details module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#source">Source</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Get emote Interface Details</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>interface_details module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/interface_details.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-interface_details">
+<span id="interface-details-module"></span><h1>interface_details module<a class="headerlink" href="#module-interface_details" title="Permalink to this headline">¶</a></h1>
+<p>&#64;author: Sharath Kumar Vijaya Kumar
+&#64;mail: <a class="reference external" href="mailto:svkumar2&#37;&#52;&#48;ncsu&#46;edu">svkumar2<span>&#64;</span>ncsu<span>&#46;</span>edu</a>
+&#64;written on: 13th Sept, 2021</p>
+<p>Lab Homework-1 (Q3)
+This script is used to extract the interface details of a remote machine.
+The details are limited to IP address, MAC address and Interface type.
+The script expects 3 mandatory command line arguments in the order
+username, hostname, password</p>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">python</span> <span class="n">interface_details</span><span class="o">.</span><span class="n">py</span> <span class="n">svkumar2</span><span class="p">,</span> <span class="mf">152.7</span><span class="o">.</span><span class="mf">176.80</span><span class="p">,</span> <span class="n">password123</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Available</span> <span class="n">interfaces</span> <span class="n">on</span> <span class="n">the</span> <span class="n">machine</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">0</span><span class="p">)</span> <span class="n">lo</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span><span class="p">)</span> <span class="n">eth0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">2</span><span class="p">)</span> <span class="n">eth1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Enter</span> <span class="n">the</span> <span class="n">interface</span> <span class="n">name</span> <span class="n">to</span> <span class="n">get</span> <span class="n">the</span> <span class="n">corresponding</span> <span class="n">detials</span> <span class="o">/</span> <span class="nb">type</span> <span class="s1">&#39;all&#39;</span> <span class="k">for</span> <span class="nb">all</span> <span class="n">interfaces</span><span class="p">:</span> <span class="nb">all</span>
+<span class="go">{</span>
+<span class="go">    &quot;lo&quot;: {</span>
+<span class="go">        &quot;ip-address&quot;: &quot;127.0.0.1&quot;,</span>
+<span class="go">        &quot;mac-address&quot;: &quot;00:00:00:00:00:00&quot;,</span>
+<span class="go">        &quot;interface-type&quot;: &quot;link/loopback&quot;</span>
+<span class="go">    },</span>
+<span class="go">    &quot;eth0&quot;: {</span>
+<span class="go">        &quot;ip-address&quot;: &quot;10.25.11.111&quot;,</span>
+<span class="go">        &quot;mac-address&quot;: &quot;00:50:56:06:5e:14&quot;,</span>
+<span class="go">        &quot;interface-type&quot;: &quot;link/ether&quot;</span>
+<span class="go">    },</span>
+<span class="go">    &quot;eth1&quot;: {</span>
+<span class="go">        &quot;ip-address&quot;: &quot;152.7.176.80&quot;,</span>
+<span class="go">        &quot;mac-address&quot;: &quot;00:50:56:06:5e:15&quot;,</span>
+<span class="go">        &quot;interface-type&quot;: &quot;link/ether&quot;</span>
+<span class="go">    }</span>
+<span class="go">}</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt id="interface_details.get_interface_details">
+<code class="sig-prename descclassname"><span class="pre">interface_details.</span></code><code class="sig-name descname"><span class="pre">get_interface_details</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ssh</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">paramiko.client.SSHClient</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/interface_details.html#get_interface_details"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#interface_details.get_interface_details" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints interface details in json format</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ssh</strong> (<em>paramiko sshClient</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="interface_details.get_interface_type">
+<code class="sig-prename descclassname"><span class="pre">interface_details.</span></code><code class="sig-name descname"><span class="pre">get_interface_type</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ssh</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">paramiko.client.SSHClient</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/interface_details.html#get_interface_type"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#interface_details.get_interface_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns Interface type of a given interface</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ssh</strong> (<em>paramiko sshClient</em>) – </p></li>
+<li><p><strong>interface</strong> (<em>str</em>) – interface name. Eg: ‘eth0’</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Interface type of the interface</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="interface_details.get_ip_address">
+<code class="sig-prename descclassname"><span class="pre">interface_details.</span></code><code class="sig-name descname"><span class="pre">get_ip_address</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ssh</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">paramiko.client.SSHClient</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="reference internal" href="_modules/interface_details.html#get_ip_address"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#interface_details.get_ip_address" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns IP address of a given interface</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ssh</strong> (<em>paramiko sshClient</em>) – </p></li>
+<li><p><strong>interface</strong> (<em>str</em>) – interface name. Eg: ‘eth0’</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>IP address of the interface</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="interface_details.get_mac_address">
+<code class="sig-prename descclassname"><span class="pre">interface_details.</span></code><code class="sig-name descname"><span class="pre">get_mac_address</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ssh</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">paramiko.client.SSHClient</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interface</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/interface_details.html#get_mac_address"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#interface_details.get_mac_address" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns MAC address of a given interface</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ssh</strong> (<em>paramiko sshClient</em>) – </p></li>
+<li><p><strong>interface</strong> (<em>str</em>) – interface name. Eg: ‘eth0’</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>MAC address of the interface</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="interface_details.make_ssh_connection">
+<code class="sig-prename descclassname"><span class="pre">interface_details.</span></code><code class="sig-name descname"><span class="pre">make_ssh_connection</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/interface_details.html#make_ssh_connection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#interface_details.make_ssh_connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method makes a SSH connection with the remote machine</p>
+</dd></dl>
+
+</div>
+</div>
+<div class="section" id="source">
+<h1>Source<a class="headerlink" href="#source" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/python</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">@author: Sharath Kumar Vijaya Kumar</span>
+<span class="sd">@mail: svkumar2@ncsu.edu</span>
+<span class="sd">@written on: 13th Sept, 2021</span>
+
+<span class="sd">Lab Homework-1 (Q3)</span>
+<span class="sd">This script is used to extract the interface details of a remote machine.</span>
+<span class="sd">The details are limited to IP address, MAC address and Interface type.</span>
+<span class="sd">The script expects 3 mandatory command line arguments in the order</span>
+<span class="sd">username, hostname, password</span>
+
+<span class="sd">Usage</span>
+<span class="sd">-----</span>
+<span class="sd">&gt;&gt;&gt; python interface_details.py svkumar2, 152.7.176.80, password123</span>
+<span class="sd">&gt;&gt;&gt; Available interfaces on the machine:</span>
+<span class="sd">&gt;&gt;&gt; 0) lo</span>
+<span class="sd">&gt;&gt;&gt; 1) eth0</span>
+<span class="sd">&gt;&gt;&gt; 2) eth1</span>
+<span class="sd">&gt;&gt;&gt; Enter the interface name to get the corresponding detials / type &#39;all&#39; for all interfaces: all</span>
+<span class="sd">{</span>
+<span class="sd">    &quot;lo&quot;: {</span>
+<span class="sd">        &quot;ip-address&quot;: &quot;127.0.0.1&quot;,</span>
+<span class="sd">        &quot;mac-address&quot;: &quot;00:00:00:00:00:00&quot;,</span>
+<span class="sd">        &quot;interface-type&quot;: &quot;link/loopback&quot;</span>
+<span class="sd">    },</span>
+<span class="sd">    &quot;eth0&quot;: {</span>
+<span class="sd">        &quot;ip-address&quot;: &quot;10.25.11.111&quot;,</span>
+<span class="sd">        &quot;mac-address&quot;: &quot;00:50:56:06:5e:14&quot;,</span>
+<span class="sd">        &quot;interface-type&quot;: &quot;link/ether&quot;</span>
+<span class="sd">    },</span>
+<span class="sd">    &quot;eth1&quot;: {</span>
+<span class="sd">        &quot;ip-address&quot;: &quot;152.7.176.80&quot;,</span>
+<span class="sd">        &quot;mac-address&quot;: &quot;00:50:56:06:5e:15&quot;,</span>
+<span class="sd">        &quot;interface-type&quot;: &quot;link/ether&quot;</span>
+<span class="sd">    }</span>
+<span class="sd">}</span>
+
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">argparse</span>
+<span class="kn">import</span> <span class="nn">inspect</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">paramiko</span>
+
+
+<span class="k">def</span> <span class="nf">get_ip_address</span><span class="p">(</span><span class="n">ssh</span><span class="p">:</span> <span class="n">paramiko</span><span class="o">.</span><span class="n">SSHClient</span><span class="p">,</span> <span class="n">interface</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns IP address of a given interface</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    ssh : paramiko sshClient</span>
+<span class="sd">    interface : str</span>
+<span class="sd">        interface name. Eg: &#39;eth0&#39;</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    IP address of the interface</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">sub_cmd1</span> <span class="o">=</span> <span class="sa">F</span><span class="s2">&quot;/usr/sbin/ip -o address | grep -w &#39;</span><span class="si">{</span><span class="n">interface</span><span class="si">}</span><span class="s2">&#39; | grep -w &#39;inet&#39; |&quot;</span>
+    <span class="n">sub_cmd2</span> <span class="o">=</span> <span class="sa">R</span><span class="s2">&quot;&quot;&quot; awk &#39;{split($4, a, &quot;/&quot;); print a[1]}&#39;&quot;&quot;&quot;</span>
+    <span class="n">stdin</span><span class="p">,</span> <span class="n">stdout</span><span class="p">,</span> <span class="n">stderr</span> <span class="o">=</span> <span class="n">ssh</span><span class="o">.</span><span class="n">exec_command</span><span class="p">(</span><span class="n">sub_cmd1</span> <span class="o">+</span> <span class="n">sub_cmd2</span><span class="p">)</span>
+    <span class="n">ip_address</span> <span class="o">=</span> <span class="n">stdout</span><span class="o">.</span><span class="n">readlines</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">ip_address</span>
+
+
+<span class="k">def</span> <span class="nf">get_mac_address</span><span class="p">(</span><span class="n">ssh</span><span class="p">:</span> <span class="n">paramiko</span><span class="o">.</span><span class="n">SSHClient</span><span class="p">,</span> <span class="n">interface</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns MAC address of a given interface</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    ssh : paramiko sshClient</span>
+<span class="sd">    interface : str</span>
+<span class="sd">        interface name. Eg: &#39;eth0&#39;</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    MAC address of the interface</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">sub_cmd1</span> <span class="o">=</span> <span class="sa">F</span><span class="s2">&quot;/usr/sbin/ip -o link | grep &#39;</span><span class="si">{</span><span class="n">interface</span><span class="si">}</span><span class="s2">&#39; |&quot;</span>
+    <span class="n">sub_cmd2</span> <span class="o">=</span> <span class="sa">R</span><span class="s2">&quot; awk &#39;{print $(NF-2)}&#39;&quot;</span>
+    <span class="n">stdin</span><span class="p">,</span> <span class="n">stdout</span><span class="p">,</span> <span class="n">stderr</span> <span class="o">=</span> <span class="n">ssh</span><span class="o">.</span><span class="n">exec_command</span><span class="p">(</span><span class="n">sub_cmd1</span> <span class="o">+</span> <span class="n">sub_cmd2</span><span class="p">)</span>
+    <span class="n">mac_address</span> <span class="o">=</span> <span class="n">stdout</span><span class="o">.</span><span class="n">readlines</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">mac_address</span>
+
+
+<span class="k">def</span> <span class="nf">get_interface_type</span><span class="p">(</span><span class="n">ssh</span><span class="p">:</span> <span class="n">paramiko</span><span class="o">.</span><span class="n">SSHClient</span><span class="p">,</span> <span class="n">interface</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Returns Interface type of a given interface</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    ssh : paramiko sshClient</span>
+<span class="sd">    interface : str</span>
+<span class="sd">        interface name. Eg: &#39;eth0&#39;</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    Interface type of the interface</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">sub_cmd1</span> <span class="o">=</span> <span class="sa">F</span><span class="s2">&quot;/usr/sbin/ip -o link | grep &#39;</span><span class="si">{</span><span class="n">interface</span><span class="si">}</span><span class="s2">&#39; |&quot;</span>
+    <span class="n">sub_cmd2</span> <span class="o">=</span> <span class="sa">R</span><span class="s2">&quot; awk &#39;{print $(NF-3)}&#39;&quot;</span>
+    <span class="n">stdin</span><span class="p">,</span> <span class="n">stdout</span><span class="p">,</span> <span class="n">stderr</span> <span class="o">=</span> <span class="n">ssh</span><span class="o">.</span><span class="n">exec_command</span><span class="p">(</span><span class="n">sub_cmd1</span> <span class="o">+</span> <span class="n">sub_cmd2</span><span class="p">)</span>
+    <span class="n">interface_type</span> <span class="o">=</span> <span class="n">stdout</span><span class="o">.</span><span class="n">readlines</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">interface_type</span>
+
+
+<span class="k">def</span> <span class="nf">get_interface_details</span><span class="p">(</span><span class="n">ssh</span><span class="p">:</span> <span class="n">paramiko</span><span class="o">.</span><span class="n">SSHClient</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Prints interface details in json format</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    ssh : paramiko sshClient</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">stdin</span><span class="p">,</span> <span class="n">stdout</span><span class="p">,</span> <span class="n">stderr</span> <span class="o">=</span> <span class="n">ssh</span><span class="o">.</span><span class="n">exec_command</span><span class="p">(</span><span class="s2">&quot;/usr/sbin/ip -o link | awk {&#39;print $2&#39;}&quot;</span><span class="p">)</span>
+    <span class="n">interfaces</span> <span class="o">=</span> <span class="n">stdout</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Available interfaces on the machine:&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">interface</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">interfaces</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">) </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">interface</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)))</span>
+        <span class="n">interfaces</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">interface</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">int_name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the interface name to get the corresponding details / type &#39;all&#39; for all interfaces: &quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">int_name</span> <span class="o">==</span> <span class="s1">&#39;all&#39;</span><span class="p">:</span>
+        <span class="n">detail_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">key</span><span class="p">,</span> <span class="p">{})</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">interfaces</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">interfaces</span><span class="p">:</span>
+            <span class="n">detail_dict</span><span class="p">[</span><span class="n">_</span><span class="p">][</span><span class="s1">&#39;ip-address&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_ip_address</span><span class="p">(</span><span class="n">ssh</span><span class="p">,</span> <span class="n">_</span><span class="p">)</span>
+            <span class="n">detail_dict</span><span class="p">[</span><span class="n">_</span><span class="p">][</span><span class="s1">&#39;mac-address&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_mac_address</span><span class="p">(</span><span class="n">ssh</span><span class="p">,</span> <span class="n">_</span><span class="p">)</span>
+            <span class="n">detail_dict</span><span class="p">[</span><span class="n">_</span><span class="p">][</span><span class="s1">&#39;interface-type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_interface_type</span><span class="p">(</span><span class="n">ssh</span><span class="p">,</span> <span class="n">_</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">detail_dict</span> <span class="o">=</span> <span class="p">{</span><span class="n">int_name</span><span class="p">:</span> <span class="p">{}}</span>
+        <span class="n">detail_dict</span><span class="p">[</span><span class="n">int_name</span><span class="p">][</span><span class="s1">&#39;ip_address&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_ip_address</span><span class="p">(</span><span class="n">ssh</span><span class="p">,</span> <span class="n">int_name</span><span class="p">)</span>
+        <span class="n">detail_dict</span><span class="p">[</span><span class="n">int_name</span><span class="p">][</span><span class="s1">&#39;mac_address&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_mac_address</span><span class="p">(</span><span class="n">ssh</span><span class="p">,</span> <span class="n">int_name</span><span class="p">)</span>
+        <span class="n">detail_dict</span><span class="p">[</span><span class="n">int_name</span><span class="p">][</span><span class="s1">&#39;interface_type&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_interface_type</span><span class="p">(</span><span class="n">ssh</span><span class="p">,</span> <span class="n">int_name</span><span class="p">)</span>
+    <span class="n">detail_json</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">detail_dict</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">detail_json</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">make_ssh_connection</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This method makes a SSH connection with the remote machine</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">ssh</span> <span class="o">=</span> <span class="n">paramiko</span><span class="o">.</span><span class="n">SSHClient</span><span class="p">()</span>
+    <span class="n">ssh</span><span class="o">.</span><span class="n">set_missing_host_key_policy</span><span class="p">(</span><span class="n">paramiko</span><span class="o">.</span><span class="n">AutoAddPolicy</span><span class="p">())</span>
+    <span class="n">ssh</span><span class="o">.</span><span class="n">load_system_host_keys</span><span class="p">()</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">ssh</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">hostname</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">Hostname</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">port</span><span class="p">,</span> <span class="n">username</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">Username</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">Password</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ssh</span><span class="o">.</span><span class="n">get_transport</span><span class="p">()</span><span class="o">.</span><span class="n">is_active</span><span class="p">():</span>
+            <span class="n">get_interface_details</span><span class="p">(</span><span class="n">ssh</span><span class="p">)</span>
+    <span class="k">except</span> <span class="n">paramiko</span><span class="o">.</span><span class="n">AuthenticationException</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">F</span><span class="s2">&quot;Function: </span><span class="si">{</span><span class="nb">str</span><span class="p">(</span><span class="n">inspect</span><span class="o">.</span><span class="n">stack</span><span class="p">()[</span><span class="mi">0</span><span class="p">][</span><span class="mi">3</span><span class="p">])</span><span class="si">}</span><span class="s2">, error: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">my_parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Get network interface details of a remote machine&quot;</span><span class="p">)</span>
+    <span class="n">my_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;Username&#39;</span><span class="p">,</span> <span class="n">metavar</span><span class="o">=</span><span class="s1">&#39;user&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Login name&quot;</span><span class="p">)</span>
+    <span class="n">my_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;Hostname&#39;</span><span class="p">,</span> <span class="n">metavar</span><span class="o">=</span><span class="s1">&#39;host&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Remote IP address&quot;</span><span class="p">)</span>
+    <span class="n">my_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;Password&#39;</span><span class="p">,</span> <span class="n">metavar</span><span class="o">=</span><span class="s1">&#39;password&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Login password&quot;</span><span class="p">)</span>
+    <span class="n">my_parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;-p&#39;</span><span class="p">,</span> <span class="s1">&#39;--port&#39;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="mi">22</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span> <span class="n">metavar</span><span class="o">=</span><span class="s1">&#39;Port number&#39;</span><span class="p">,</span>
+                           <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Port number if default SSH port is not 22&quot;</span><span class="p">)</span>
+    <span class="n">args</span> <span class="o">=</span> <span class="n">my_parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+    <span class="n">make_ssh_connection</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to Get emote Interface Details’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Sharath Kumar.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

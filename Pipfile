@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+dill = "*"
+paramiko = "*"
+sphinx = "*"
+rinohtype = "*"
+sphinx-rtd-theme = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
